@@ -1,0 +1,115 @@
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+  font-family: "Cairo", "Tajawal", sans-serif;
+}
+
+body, .entry-content, .ld-tabs-navigation, .ld-progress {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+.ld-lesson-list-steps, .ld-progress-percentage, .ld-progress-steps {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+select, input, button {
+  direction: rtl;
+}
+
+
+
+
+/* زيادة المسافة بين الجزئين */
+html[dir="rtl"] .ld-progress-percentage {
+  margin-left: 20px;
+}
+
+html[dir="rtl"] .ld-lesson-list-progress {
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 0px;
+  margin-right: 0px;
+  border-left: 1px solid #ddd;
+  border-right: none;
+}
+
+
+
+html[dir="rtl"] .ld-icon-content, .ld-status-icon, .ld-icon-quiz{
+  margin-left: 5px;
+ 
+}
+
+html[dir="rtl"] .ld-icon-arrow-right, .ld-icon-arrow-left, .elementor-widget-heading .elementor-widget-container .elementor-heading-title a{
+  transform: scaleX(-1);
+}
+
+
+html[dir="rtl"] .learndash-wrapper .ld-breadcrumbs .ld-breadcrumbs-segments span:after {
+    content: "<";
+    unicode-bidi: plaintext;
+} 
+
+
+
+
+/* يطبق فقط عندما يكون اتجاه الموقع RTL */
+html[dir="rtl"] .ld-breadcrumbs-segments {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 8px;
+  align-items: center;
+  text-align: left;
+}
+
+html[dir="rtl"] .ld-breadcrumbs-segments span {
+   display: flex;
+  align-items: center;
+}
+
+
+
+
+
+/* Course Page */ 
+html[dir="rtl"] .ld-focus {
+  position: relative;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    direction: rtl;
+    
+}
+
+html[dir="rtl"] .ld-focus-sidebar {
+  position: absolute;
+  right: 0;
+  width: 25%;
+}
+
+html[dir="rtl"] .ld-focus-main {
+        padding-left: 0;
+    margin-left: 0;
+
+  margin-right: 25%;
+  width: auto;
+  box-sizing: border-box;
+}
+
+html[dir="rtl"] .learndash-wrapper .ld-focus .ld-focus-main .ld-focus-content{
+padding: 0;
+}
+html[dir="rtl"] .learndash-wrapper .ld-focus .ld-focus-main {
+  margin-left: 100px;
+}
+
+html[dir="rtl"] .wpProQuiz_question_page span {
+  margin: 0 4px;
+}
+html[dir="rtl"] .wpProQuiz_results p span {
+  margin: 0 4px;
+}
+
